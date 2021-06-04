@@ -6,7 +6,7 @@ from icevision.all import *
 from PIL import Image
 
 CLASS_MAP = ClassMap({"background": 0, "syringe": 1, "glove": 2, "mask": 3})
-WEIGHTS_URL = "https://github.com/benihime91/Covid-Waste-Detection/releases/download/v1.0/effecientdnet-b0-ver0.01-3VNfX.pth"
+WEIGHTS_URL = "https://github.com/benihime91/Covid-Waste-Detection/releases/download/v2.0.0/effecientdnet-b0-ver2.0.0-amrVz.pth"
 SIZE = 512
 TRANSFORMS_LIST = [*tfms.A.resize_and_pad(SIZE), tfms.A.Normalize()]
 TRANSFORMS = tfms.A.Adapter(TRANSFORMS_LIST)
